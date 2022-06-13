@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block banner %}
+<div class="container">
+      <div class="page-banner">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-6">
+            <nav aria-label="Breadcrumb">
+              <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+              </ul>
+            </nav>
+            <h1 class="text-center">About Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+{%endblock%}
+
+{%block content1 %}
+  <div class="page-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 py-3">
+          <h2 class="title-section">About Phishing from Us</h2>
+          <div class="divider"></div>
+
+          <p>Phishing is one of the most successful and effective methods for hackers to scam us and obtain our personal and financial data.</p>
+          <p>Our growing reliance on the internet for much of our day-to-day operations has created the ideal setting for fraudsters to launch targeted phishing assaults.</p>
+          <p>Another common tactic used by criminals involves the creation of fake websites to trick victims into entering sensitive information</p>
+          <p>Phishing websites are created to dupe unsuspecting users into thinking they are on a legitimate site</p>
+        </div>
+        <div class="col-lg-6 py-3">
+          <div class="img-fluid py-3 text-center">
+            <img src="{% static 'assets/img/about_frame.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%endblock%}
+
